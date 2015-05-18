@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.xvxingan.demo.dao.UserDao;
 import com.xvxingan.demo.entity.City;
 import com.xvxingan.demo.entity.User;
  
@@ -22,17 +23,20 @@ import com.xvxingan.demo.entity.User;
 public class SpringTest {
 	private static Logger loger = Logger.getLogger(SpringTest.class);
 	public static void main(String[] args) throws IOException {
-//		ApplicationContext ctx =  new ClassPathXmlApplicationContext( "beans.xml" );
-//	 	User user = (User) ctx.getBean("user");
-//	 	City city = (City) ctx.getBean("city");
-//		 System.out.println(user);
-//		 System.out.println(city);
-//		 city.works();
+		ApplicationContext ctx =  new ClassPathXmlApplicationContext( "beans.xml" );
+	 	User user = (User) ctx.getBean("user");
+	 	City city = (City) ctx.getBean("city");
+		 System.out.println(user);
+		 System.out.println(city);
+		 city.works();
+		 UserDao userDao = (UserDao) ctx.getBean("userDao");
+		 userDao.addUser(user);
+		
 //		 loger.debug("hello");
 		 
-			loger.info("hello");
-			loger.warn("warn");
-			loger.error("error");
+//			loger.info("hello");
+//			loger.warn("warn");
+//			loger.error("error");
  	 
  	}
 	public static void copy(File src,File dest) throws IOException{
