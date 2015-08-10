@@ -2,7 +2,7 @@ package com.xvxingan.demo.entity;
 
 import org.springframework.stereotype.Component;
 
-
+@Component
 public class School implements Org{
 	@Override
 	public String toString() {

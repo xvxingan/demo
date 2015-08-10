@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.springframework.stereotype.Component;
+@Component
 public class User {
 	private String name;
 	private int age;

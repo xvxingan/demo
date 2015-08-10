@@ -21,7 +21,7 @@ public class LogInterceptor {
  	}
 	@After("log()")
 	public void after(JoinPoint jp){
-		System.out.println("after " +jp.getTarget().getClass()+"."+ jp.getSignature().getName()+" invoked");
+ 		System.out.println("after " +jp.getTarget().getClass()+"."+ jp.getSignature().getName()+" invoked");
 	}
 	@Around("log()")
 	public void around(ProceedingJoinPoint jp){

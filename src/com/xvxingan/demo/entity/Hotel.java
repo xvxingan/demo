@@ -1,9 +1,8 @@
 package com.xvxingan.demo.entity;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-
-@Repository
+ 
+@Component
 public class Hotel implements Org{
 	public String name;
 	public String location;

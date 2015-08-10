@@ -7,3 +7,13 @@
 7.datasourece读写分离
 8.整合mybatis
 事务管理
+shiro
+nginx
+message-driven bean
+UrlRewriteFilter
+<dwr:controller
+@RequiresPermissions
+jquery.dataTables.js
+ $.extend
+ jdbctemplate SqlSession MapperFactoryBean
+ rsync -auv 
